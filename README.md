@@ -4,7 +4,7 @@
 
 <p aggregate-rating="5.0" align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Mission-Planning-Software"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Mission-Planning-Software?style=flat-square" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Mission-Planning-Software"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Mission-Planning-Software?style=flat-square" alt="GitHub_Stars"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Mission-Planning-Software/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Mission-Planning-Software?style=flat-square" alt="GitHub Forks"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Mission-Planning-Software/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-Mission-Planning-Software?style=flat-square" alt="GitHub Issues"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Mission-Planning-Software/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Mission-Planning-Software?style=flat-square" alt="License"/></a>
@@ -44,7 +44,7 @@ The table below lists top enterprise and SaaS platforms for multi-domain mission
 
 ## 🔓 Open-Source GitHub Projects
 
-Below are top open-source projects for space dynamics, orbital propagation, satellite tracking, and geospatial visualization. Items are sorted by GitHub Star count (descending).
+Below are top open-source projects for space dynamics, orbital propagation, satellite tracking, and geospatial visualization. Items are sorted by GitHub Stars_Count (descending).
 
 - **[CesiumGS/cesium](https://github.com/CesiumGS/cesium)** [![Stars](https://img.shields.io/github/stars/CesiumGS/cesium?style=social&color=white)](https://github.com/CesiumGS/cesium/stargazers) 🌐  
   3D geospatial platform for globe visualization, satellite orbit tracking, and real-time situational awareness.
