@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#1f2937" />
+    </linearGradient>
+    <linearGradient id="text-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#60a5fa" />
+      <stop offset="50%" stop-color="#a78bfa" />
+      <stop offset="100%" stop-color="#f472b6" />
+    </linearGradient>
+    <linearGradient id="orbit-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0.2" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .orbit-line {
+      stroke: url(#orbit-grad);
+      stroke-width: 2;
+      fill: none;
+      stroke-dasharray: 8 6;
+      animation: rotateOrbit 40s linear infinite;
+      transform-origin: 600px 150px;
+    }
+    .satellite {
+      animation: pulseGlow 3s ease-in-out infinite alternate;
+    }
+    .grid-line {
+      stroke: #374151;
+      stroke-width: 0.5;
+      opacity: 0.3;
+    }
+    @keyframes rotateOrbit {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    @keyframes pulseGlow {
+      from { opacity: 0.6; transform: scale(0.98); }
+      to { opacity: 1; transform: scale(1.02); }
+    }
+  </style>
+
+  <!-- Background Layer -->
+  <rect width="1200" height="300" fill="url(#bg-grad)" rx="16" />
+
+  <!-- Tactical Grid Layer -->
+  <g class="grid">
+    <line x1="100" y1="0" x2="100" y2="300" class="grid-line" />
+    <line x1="300" y1="0" x2="300" y2="300" class="grid-line" />
+    <line x1="500" y1="0" x2="500" y2="300" class="grid-line" />
+    <line x1="700" y1="0" x2="700" y2="300" class="grid-line" />
+    <line x1="900" y1="0" x2="900" y2="300" class="grid-line" />
+    <line x1="1100" y1="0" x2="1100" y2="300" class="grid-line" />
+    <line x1="0" y1="75" x2="1200" y2="75" class="grid-line" />
+    <line x1="0" y1="150" x2="1200" y2="150" class="grid-line" />
+    <line x1="0" y1="225" x2="1200" y2="225" class="grid-line" />
+  </g>
+
+  <!-- Dynamic Orbital Elements (Background Accent) -->
+  <ellipse cx="600" cy="150" rx="450" ry="110" class="orbit-line" transform="rotate(-12 600 150)" />
+  <ellipse cx="600" cy="150" rx="520" ry="90" class="orbit-line" transform="rotate(18 600 150)" />
+
+  <!-- Constellation Nodes & Signal Waves -->
+  <g class="satellite" transform="translate(150, 70)">
+    <circle cx="0" cy="0" r="4" fill="#60a5fa" filter="url(#glow)" />
+    <circle cx="0" cy="0" r="12" fill="none" stroke="#60a5fa" stroke-width="1" opacity="0.4" />
+  </g>
+  <g class="satellite" transform="translate(1020, 220)">
+    <circle cx="0" cy="0" r="5" fill="#f472b6" filter="url(#glow)" />
+    <circle cx="0" cy="0" r="16" fill="none" stroke="#f472b6" stroke-width="1" opacity="0.4" />
+  </g>
+
+  <!-- Text Foreground (Always Prominent & Accessible) -->
+  <g text-anchor="middle">
+    <!-- Main Title -->
+    <text x="600" y="130" fill="url(#text-grad)" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="44" letter-spacing="2" filter="url(#glow)">
+      AWESOME MISSION PLANNING SOFTWARE
+    </text>
+    
+    <!-- Subtitle -->
+    <text x="600" y="185" fill="#e5e7eb" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="500" font-size="20" letter-spacing="1">
+      🚀 Defense, Aerospace, Space Trajectory, C2 Simulation &amp; Satellite Operations
+    </text>
+
+    <!-- Tagline / Badges preview text -->
+    <text x="600" y="225" fill="#9ca3af" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="400" font-size="14" letter-spacing="3">
+      CURATED SAAS PLATFORMS &amp; OPEN-SOURCE FRAMEWORKS
+    </text>
+  </g>
+</svg>
